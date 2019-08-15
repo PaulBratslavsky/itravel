@@ -307,16 +307,23 @@ template {
 /*************************
     GLOBAL STYLES
 *************************/
+.wrapper {
+  padding: 0 1rem; }
+
+.section-padding-3 {
+  padding: 3rem 0; }
+
 * {
   box-sizing: border-box; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
 
 body {
   font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   color: #333; }
-
-img {
-  max-width: 100%;
-  height: auto; }
 
 .base-color {
   background: #2f5572; }
@@ -329,8 +336,7 @@ img {
 
 .obj-fit {
   -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%; }
+     object-fit: cover; }
 
 .btn {
   color: #fefefe;
@@ -346,9 +352,10 @@ img {
     Main Hero Section
 *************************/
 .large-hero {
-  position: relative; }
+  position: relative;
+  border-bottom: 0.5rem solid #2f5572; }
   .large-hero__main-image {
-    height: 75vh; }
+    height: 100vh; }
   .large-hero__text-content {
     position: absolute;
     width: 100%;
@@ -362,31 +369,43 @@ img {
     margin: 0; }
   .large-hero__sub-heading {
     color: #2f5572;
-    font-size: 1.9rem;
-    margin: 0 0 1.5rem 0; }
+    font-size: 2rem;
+    margin: 0 0 3rem 0; }
   .large-hero__content {
     color: #fefefe;
     font-size: 1.4rem;
     font-weight: 100;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
     max-width: 18rem;
-    margin: 0 auto 1.5rem auto; }
+    margin: 0 auto 3rem auto; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */ }
+  /* Styles */
+  img.large-hero__main-image {
+    height: 100vh; } }
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
   /* Styles */
   body {
-    background: yellow; } }
+    background: yellow; }
+  .large-hero__sub-heading {
+    margin: 0 0 2rem 0; }
+  .large-hero__content {
+    max-width: 25rem;
+    margin: 0 auto 2rem auto; } }
 
 /* Smartphones (portrait) ----------- */
 @media only screen and (max-width: 320px) {
   /* Styles */
   body {
-    background: orange; } }
+    background: orange; }
+  .large-hero__sub-heading {
+    margin: 0 0 3rem 0; }
+  .large-hero__content {
+    max-width: 25rem;
+    margin: 0 auto 3rem auto; } }
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
