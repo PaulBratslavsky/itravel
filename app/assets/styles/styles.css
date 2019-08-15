@@ -327,6 +327,11 @@ img {
 .highlight-color {
   background: orange; }
 
+.obj-fit {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%; }
+
 .btn {
   color: #fefefe;
   text-decoration: none;
@@ -343,9 +348,7 @@ img {
 .large-hero {
   position: relative; }
   .large-hero__main-image {
-    height: 75vh;
-    -o-object-fit: cover;
-       object-fit: cover; }
+    height: 75vh; }
   .large-hero__text-content {
     position: absolute;
     width: 100%;
