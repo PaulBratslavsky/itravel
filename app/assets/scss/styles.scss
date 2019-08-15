@@ -1,16 +1,15 @@
-* {
-  box-sizing: border-box;
-}
+// Global Variables
+$baseColor: #2f5572;
+$secondaryColor: #fefefe;
+$highlightColor: orange;
 
-html {
-  height: 100%;
-  width: 100%;
-}
+// Normalize CSS
+@import "modules/normalize";
 
-body {
-  background: red;
+// Global CSS
+@import "modules/global-styles";
 
-  h1 {
-    color: white;
-  }
-}
+// Main Hero CSS
+@import "modules/main-hero";
+
+

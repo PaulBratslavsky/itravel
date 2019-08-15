@@ -1,0 +1,112 @@
+/*************************
+    Main Hero Section
+*************************/
+.large-hero {
+  position: relative;
+
+  &__main-image {
+    height: 75vh;
+    object-fit: cover;
+  }
+
+
+  &__text-content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+  }
+
+  &__heading {
+    color: $baseColor;
+    font-size: 2.8rem;
+    margin: 0
+  }
+
+  &__sub-heading {
+    color: $baseColor;
+    font-size: 1.9rem;
+    margin: 0 0 1.5rem 0;
+
+  }
+
+  &__content {
+    color: $secondaryColor;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 0 rgba(0,0,0, 0.1);
+    max-width: 18rem;
+    margin: 0 auto 1.5rem auto;
+  }
+
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+body { background: yellow }
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen 
+and (max-width : 320px) {
+/* Styles */
+body { background: orange; }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+/* Styles */
+body { background: green; }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+/* Styles */
+body { background:blue; }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+/* Styles */
+body { background: pink; }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+and (min-width : 1224px) {
+/* Styles */
+body { background: grey; }
+
+
+}
+
+/* Large screens ----------- */
+@media only screen 
+and (min-width : 1824px) {
+/* Styles */
+body { background: white; }
+
+}
+

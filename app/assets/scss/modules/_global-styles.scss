@@ -1,0 +1,49 @@
+/*************************
+    GLOBAL STYLES
+*************************/
+
+* {
+  box-sizing: border-box;
+}
+
+
+body { 
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  color: #333; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// Colors
+.base-color {
+  background: $baseColor;
+}
+
+.secondary-color {
+  background: $secondaryColor;
+}
+
+.highlight-color {
+  background: $highlightColor;
+}
+
+
+
+// Button Styles
+
+.btn {
+  color: $secondaryColor;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  display: inline-block;
+}
+
+.large {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+}
+
+

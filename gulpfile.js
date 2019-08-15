@@ -8,14 +8,13 @@ function style() {
   // 1. where is my css
   return gulp.src('./app/assets/scss/**/*.scss')
   // 2. pass file through sass compiler
-  .pipe(sass())
+  .pipe(sass().on('error', sass.logError))
   // 2.a prefixer
   .pipe(autoprefixer())
   // 3. where to save the file
   .pipe(gulp.dest('./app/assets/styles'))
   // 4. browser sync accross all browaers
   .pipe(browserSync.stream())
-  // 5. 
 } 
 
 function watch() {
