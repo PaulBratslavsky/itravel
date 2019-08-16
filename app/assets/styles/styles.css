@@ -307,9 +307,24 @@ template {
 /*************************
     GLOBAL STYLES
 *************************/
-.h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  color: #333; }
+
+img {
+  width: 100%;
+  height: auto;
+  display: block; }
+
+img.icons {
+  height: 150px; }
 
 .generic-paragraphs p {
   font-size: 1.2rem;
@@ -327,21 +342,6 @@ template {
 
 .section-padding {
   padding: 4.5rem 0; }
-
-* {
-  box-sizing: border-box; }
-
-img {
-  width: 100%;
-  height: auto;
-  display: block; }
-
-img.icons {
-  height: 150px; }
-
-body {
-  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
-  color: #333; }
 
 .headline {
   font-weight: 300;

@@ -1,50 +1,14 @@
 /*************************
     GLOBAL STYLES
 *************************/
-.h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
 
-.generic-paragraphs {
-  p {
-    font-size: 1.2rem;
-    line-height: 1.65;
-    margin: 1.8rem 0;
-  }
-  
-  p a {
-    font-weight: bold; 
-    color: $highlightColor;
-  }
-}
-
-
-.wrapper {
-  padding: 0 1rem;
-  max-width: 320px;
-  margin: 0 auto;
-
-}
-
-.section-padding {
-  padding: 4.5rem 0;
-}
 
 * {
   box-sizing: border-box;
-}
-
-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-
-
-img.icons {
-  height: 150px;
 }
 
 
@@ -52,120 +16,3 @@ body {
   font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   color: #333; 
 }
-// MODIFYERS
-
-.headline {
-  font-weight: 300;
-  font-size: 2.6rem;
-  color: $baseColor;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-narrow {
-  max-width: 20rem;
-  margin: 0 auto;
-}
-
-.text-highlight {
-  color: $highlightColor
-}
-
-.text-bold {
-  font-weight: bold;
-}
-
-.text-less-bold {
-  font-weight: 100;
-}
-
-.text-small {
-  font-size: 1.875rem;
-}
-
-.text-margin-top-large {
-  margin-top: 4.5rem;
-}
-
-.text-margin-bottom-large {
-  margin-bottom: 4.5rem;
-}
-
-.text-margin-top-small {
-  margin-top: 1rem;
-}
-
-.text-margin-bottom-small {
-  margin-bottom: 1rem;
-}
-
-// Colors
-.base-color {
-  background: $baseColor;
-}
-
-.secondary-color {
-  background: $secondaryColor;
-}
-
-.highlight-color {
-  background: $highlightColor;
-}
-
-.text-color {
-  color: $secondaryColor;
-}
-
-// Image 
-.obj-fit {
-  object-fit: cover;
-}
-
-
-
-// Button Styles
-
-.btn {
-  color: $secondaryColor;
-  text-decoration: none;
-  padding: 0.5rem 0.75rem;
-  display: inline-block;
-}
-
-.large {
-  font-size: 1.4rem;
-  padding: 0.5rem 1rem;
-}
-
-/*
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-@media (min-width : 768px) {
-  .col-gutter-left {
-    padding-left: 2rem;
-  }
-  
-  .col-4 {
-    float: left;
-    width: 33.3%;
-  }
-  
-  .col-8 {
-    float: left;
-    width: 66.6%;
-  }
-
-  .img-in-col {
-    display: block;
-    object-fit: cover;
-    height: max-content;
-}
-}
-
-*/
