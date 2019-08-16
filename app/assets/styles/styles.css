@@ -307,11 +307,26 @@ template {
 /*************************
     GLOBAL STYLES
 *************************/
-.wrapper {
-  padding: 0 1rem; }
+.h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
 
-.section-padding-3 {
-  padding: 3rem 0; }
+.generic-paragraphs p {
+  font-size: 1.2rem;
+  line-height: 1.65;
+  margin: 1.8rem 0; }
+
+.generic-paragraphs p a {
+  font-weight: bold;
+  color: orange; }
+
+.wrapper {
+  padding: 0 1rem;
+  max-width: 320px;
+  margin: 0 auto; }
+
+.section-padding {
+  padding: 4.5rem 0; }
 
 * {
   box-sizing: border-box; }
@@ -321,9 +336,48 @@ img {
   height: auto;
   display: block; }
 
+img.icons {
+  height: 150px; }
+
 body {
   font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
   color: #333; }
+
+.headline {
+  font-weight: 300;
+  font-size: 2.6rem;
+  color: #2f5572; }
+
+.text-center {
+  text-align: center; }
+
+.text-narrow {
+  max-width: 20rem;
+  margin: 0 auto; }
+
+.text-highlight {
+  color: orange; }
+
+.text-bold {
+  font-weight: bold; }
+
+.text-less-bold {
+  font-weight: 100; }
+
+.text-small {
+  font-size: 1.875rem; }
+
+.text-margin-top-large {
+  margin-top: 4.5rem; }
+
+.text-margin-bottom-large {
+  margin-bottom: 4.5rem; }
+
+.text-margin-top-small {
+  margin-top: 1rem; }
+
+.text-margin-bottom-small {
+  margin-bottom: 1rem; }
 
 .base-color {
   background: #2f5572; }
@@ -333,6 +387,9 @@ body {
 
 .highlight-color {
   background: orange; }
+
+.text-color {
+  color: #fefefe; }
 
 .obj-fit {
   -o-object-fit: cover;
@@ -348,6 +405,36 @@ body {
   font-size: 1.4rem;
   padding: 0.5rem 1rem; }
 
+/*
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media (min-width : 768px) {
+  .col-gutter-left {
+    padding-left: 2rem;
+  }
+  
+  .col-4 {
+    float: left;
+    width: 33.3%;
+  }
+  
+  .col-8 {
+    float: left;
+    width: 66.6%;
+  }
+
+  .img-in-col {
+    display: block;
+    object-fit: cover;
+    height: max-content;
+}
+}
+
+*/
 /*************************
     Main Hero Section
 *************************/
@@ -365,11 +452,11 @@ body {
     left: 0; }
   .large-hero__heading {
     color: #2f5572;
-    font-size: 2.8rem;
+    font-size: 3.2rem;
     margin: 0; }
   .large-hero__sub-heading {
     color: #2f5572;
-    font-size: 2rem;
+    font-size: 2.4rem;
     margin: 0 0 3rem 0; }
   .large-hero__content {
     color: #fefefe;
@@ -378,61 +465,3 @@ body {
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
     max-width: 18rem;
     margin: 0 auto 3rem auto; }
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* Styles */
-  img.large-hero__main-image {
-    height: 100vh; } }
-
-/* Smartphones (landscape) ----------- */
-@media only screen and (min-width: 321px) {
-  /* Styles */
-  body {
-    background: yellow; }
-  .large-hero__sub-heading {
-    margin: 0 0 2rem 0; }
-  .large-hero__content {
-    max-width: 25rem;
-    margin: 0 auto 2rem auto; } }
-
-/* Smartphones (portrait) ----------- */
-@media only screen and (max-width: 320px) {
-  /* Styles */
-  body {
-    background: orange; }
-  .large-hero__sub-heading {
-    margin: 0 0 3rem 0; }
-  .large-hero__content {
-    max-width: 25rem;
-    margin: 0 auto 3rem auto; } }
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  /* Styles */
-  body {
-    background: green; } }
-
-/* iPads (landscape) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-  /* Styles */
-  body {
-    background: blue; } }
-
-/* iPads (portrait) ----------- */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-  /* Styles */
-  body {
-    background: pink; } }
-
-/* Desktops and laptops ----------- */
-@media only screen and (min-width: 1224px) {
-  /* Styles */
-  body {
-    background: grey; } }
-
-/* Large screens ----------- */
-@media only screen and (min-width: 1824px) {
-  /* Styles */
-  body {
-    background: white; } }
