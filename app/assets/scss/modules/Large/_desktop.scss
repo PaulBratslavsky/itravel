@@ -3,6 +3,30 @@
     max-width: 980px;
   }
 
+  // OUR FEATURES
+
+  .heading-container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__img {
+      display: inline;
+      width: 48px;
+      padding: 0;
+    }
+    
+    &__text {
+      display: inline;
+      span {
+        font-weight: lighter; 
+      }
+    }
+  }
+
+  
+
   .featured__items {
     margin: 0 auto;
     display: flex;
@@ -21,10 +45,14 @@
     img {
       padding: 1.4rem;
       margin-bottom: 1rem;
+      float: left;
+      display: inline-block;
+      width: 100px;
+      height: 100%;
     }
   
     h3, p {
-      text-align: center;
+      text-align: left;
     }
   
     h3 {
