@@ -59,4 +59,16 @@
       font-size: 2rem;
     }
   }
+
+  // TESTIMONIALS 
+  .testimonials__items { 
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .testimonials__item {
+    margin: 1rem;
+  }
 }

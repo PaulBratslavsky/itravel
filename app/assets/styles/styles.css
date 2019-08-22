@@ -382,6 +382,9 @@ img.icons {
 .base-color {
   background: #2f5572; }
 
+.base-color-text {
+  color: #2f5572; }
+
 .secondary-color {
   background: #fefefe; }
 
@@ -465,6 +468,43 @@ img.icons {
   .featured__item p {
     color: #e0e0e0; }
 
+.testimonials {
+  background: url("/assets/images/testimonials-bg.jpg") no-repeat top center/cover; }
+
+.testimonials__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem; }
+
+.testimonials__item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.75);
+  margin: 3.5rem 0; }
+  .testimonials__item img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: solid 5px rgba(255, 255, 255, 0.75);
+    display: block;
+    position: relative;
+    top: -75px;
+    left: calc(50% - 75px); }
+  .testimonials__item .testimonials__content {
+    position: relative;
+    top: -40px;
+    padding: 0.5rem; }
+    .testimonials__item .testimonials__content h2, .testimonials__item .testimonials__content h3, .testimonials__item .testimonials__content p {
+      text-align: center; }
+    .testimonials__item .testimonials__content h2 {
+      font-size: 2rem;
+      color: #474747; }
+    .testimonials__item .testimonials__content h3 {
+      color: #525252; }
+    .testimonials__item .testimonials__content p {
+      color: #666666;
+      font-size: 1.4rem; }
+
 @media screen and (max-width: 468px) {
   .wrapper {
     max-width: 368px; } }
@@ -472,11 +512,8 @@ img.icons {
 @media screen and (max-width: 768px) {
   .wrapper {
     max-width: 700px; }
-  .featured__items {
-    max-width: 468px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; } }
+  .testimonials__item {
+    width: 100%; } }
 
 @media screen and (min-width: 769px) {
   .wrapper {
@@ -513,13 +550,19 @@ img.icons {
     .featured__item h3, .featured__item p {
       text-align: left; }
     .featured__item h3 {
-      font-size: 2rem; } }
+      font-size: 2rem; }
+  .testimonials__items {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center; }
+  .testimonials__item {
+    margin: 1rem; } }
 
 @media screen and (min-width: 1200px) {
   .wrapper {
-    max-width: 1568px; }
+    max-width: 1100px; }
   .featured__item {
-    min-width: 260px; }
+    min-width: 230px; }
     .featured__item img {
       padding: 1.4rem;
       margin-bottom: 1rem;

@@ -6,7 +6,6 @@ img {
 }
 
 
-
 img.icons {
   height: 150px;
 }
@@ -87,6 +86,10 @@ img.icons {
 // Colors
 .base-color {
   background: $baseColor;
+}
+
+.base-color-text {
+  color: $baseColor;
 }
 
 .secondary-color {
