@@ -1,0 +1,46 @@
+#features {
+  
+}
+
+.heading-container {
+  margin-bottom: 2rem;
+  &__img,
+  &__text {
+    padding: 1rem;
+  }
+
+  &__img {
+    display: block;
+    height: 100px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+}
+
+.featured__items {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.featured__item {
+  margin: 0 0 1rem 0;
+
+  img {
+    padding: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  h3, p {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+}

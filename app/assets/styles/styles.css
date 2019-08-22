@@ -405,36 +405,6 @@ img.icons {
   font-size: 1.4rem;
   padding: 0.5rem 1rem; }
 
-/*
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-@media (min-width : 768px) {
-  .col-gutter-left {
-    padding-left: 2rem;
-  }
-  
-  .col-4 {
-    float: left;
-    width: 33.3%;
-  }
-  
-  .col-8 {
-    float: left;
-    width: 66.6%;
-  }
-
-  .img-in-col {
-    display: block;
-    object-fit: cover;
-    height: max-content;
-}
-}
-
-*/
 /*************************
     Main Hero Section
 *************************/
@@ -465,3 +435,69 @@ img.icons {
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
     max-width: 18rem;
     margin: 0 auto 3rem auto; }
+
+.heading-container {
+  margin-bottom: 2rem; }
+  .heading-container__img, .heading-container__text {
+    padding: 1rem; }
+  .heading-container__img {
+    display: block;
+    height: 100px; }
+  .heading-container__text {
+    text-align: center;
+    font-size: 3rem; }
+
+.featured__items {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; }
+
+.featured__item {
+  margin: 0 0 1rem 0; }
+  .featured__item img {
+    padding: 1.4rem;
+    margin-bottom: 1rem; }
+  .featured__item h3, .featured__item p {
+    text-align: center; }
+  .featured__item h3 {
+    font-size: 2rem; }
+
+@media screen and (max-width: 468px) {
+  .wrapper {
+    max-width: 368px;
+    background: pink; } }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 700px; }
+  .featured__items {
+    max-width: 468px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; } }
+
+@media screen and (min-width: 769px) {
+  .wrapper {
+    max-width: 980px; }
+  .featured__items {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+  .featured__item {
+    margin: 1rem;
+    flex: 1;
+    min-width: 320px; }
+    .featured__item img {
+      padding: 1.4rem;
+      margin-bottom: 1rem; }
+    .featured__item h3, .featured__item p {
+      text-align: center; }
+    .featured__item h3 {
+      font-size: 2rem; } }
+
+@media screen and (min-width: 1268px) {
+  .wrapper {
+    max-width: 1500px; } }

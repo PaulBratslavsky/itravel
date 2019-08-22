@@ -15,4 +15,11 @@ $highlightColor: orange;
 // Main Hero CSS
 @import "modules/MainHero/main-hero";
 
+// Our Features CSS
+@import "modules/OurFeatures/ourfeatures";
 
+// Mobile Styles
+@import "modules/Small/smartphones";
+@import "modules/Medium/ipads";
+@import "modules/Large/desktop";
+@import "modules/Huge/widescreen";
