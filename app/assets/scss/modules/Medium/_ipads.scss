@@ -1,7 +1,30 @@
-@media screen and ( max-width: 768px ) {
+@media screen and ( max-width: 768px ) and (min-width: 369px) {
   .wrapper {
     max-width: 700px;
   }
+
+  // MAIN HERO
+  .large-hero {
+    &__main-image {
+    height: 100vh;
+    }
+
+    &__heading {
+      font-size: 2.8rem;
+    }
+
+    &__sub-heading {
+      font-size: 3.8rem;
+      margin-bottom: 1rem;
+    }
+
+    &__content {
+      max-width: 100%;
+      font-size: 2.8rem; 
+      font-weight: bold;   
+    }
+  }
+
 
   .testimonials__item {
     width: 100%;

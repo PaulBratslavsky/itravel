@@ -3,6 +3,30 @@
     max-width: 980px;
   }
 
+  // MAIN HERO
+  .large-hero {
+    &__main-image {
+    height: 560px;
+    }
+
+    &__heading {
+      font-size: 3rem;
+    }
+
+    &__sub-heading {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    &__content {
+      max-width: 100%;
+      font-size: 3rem; 
+      font-weight: bold;   
+    }
+  }
+
+
+
   // OUR FEATURES
 
   .heading-container {

@@ -11,6 +11,9 @@
 }
 
 .testimonials__item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   position: relative;
   background: rgba(255, 255, 255, 0.75);
   margin: 3.5rem 0;
@@ -19,19 +22,22 @@
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: solid 5px rgba(255, 255, 255, 0.75);
+    border: solid 6px rgba(255, 255, 255, 0.75);
 
     display: block;
     position: relative;
     top: -75px;
-    left: calc(50% - 75px);
+    // left: calc(50% - 75px); Margnin works better
+    margin: 0 auto;
+
+    margin-bottom: -75px;
   }
 
   .testimonials__content {
-    position: relative;
-    top: -40px;
+    // position: relative;
+    // top: -40px;
 
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
 
     h2, h3, p {
       text-align: center;
@@ -39,11 +45,12 @@
 
     h2 {
       font-size: 2rem;
-      color: #474747;
+      color: $baseColor;
     }
 
     h3 {
-      color: #525252;
+      color: $highlightColor;
+      padding: 0.25rem;
     }
 
     p {
