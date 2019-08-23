@@ -3,6 +3,14 @@
     max-width: 980px;
   }
 
+  .mobile-view {
+    display: none !important;
+  }
+
+  .desktop-view {
+    display: block;
+  }
+
   // MAIN HEADER
   .main-header {
 

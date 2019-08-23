@@ -416,6 +416,27 @@ img.icons {
   font-size: 1.4rem;
   padding: 0.5rem 1rem; }
 
+.mobile-view {
+  display: block; }
+
+.desktop-view {
+  display: none; }
+
+.main-header {
+  background-color: #FFF;
+  position: fixed;
+  width: 100%;
+  min-height: 55px;
+  z-index: 300;
+  font-weight: bold; }
+
+.header-container {
+  min-height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
 /*
 .main-header {
 
@@ -496,6 +517,20 @@ img.icons {
 }
 
 */
+#moible-menu {
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  height: calc( 100vh - 50px);
+  width: 100vw;
+  background: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: none; }
+
 /*************************
     Main Hero Section
 *************************/
@@ -661,6 +696,10 @@ img.icons {
 @media screen and (min-width: 769px) {
   .wrapper {
     max-width: 980px; }
+  .mobile-view {
+    display: none !important; }
+  .desktop-view {
+    display: block; }
   .main-header {
     background-color: rgba(47, 85, 114, 0.3);
     position: fixed;
