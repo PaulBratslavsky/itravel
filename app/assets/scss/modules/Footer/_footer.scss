@@ -1,0 +1,26 @@
+#footer {
+  background: $baseColor;
+  padding: 1rem 0;
+}
+
+.footer-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+
+  p {
+    font-size: 1.4rem;
+    margin: 0;
+    color: $secondaryColor;
+    display: none;
+  }
+
+  a.btn {
+    display: flex;
+    align-items: center;  
+    border-radius: 4px;
+  }
+}

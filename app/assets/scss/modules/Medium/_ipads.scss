@@ -1,4 +1,4 @@
-@media screen and ( max-width: 768px ) and (min-width: 369px) {
+@media screen and ( max-width: 768px ) and (min-width: 450px) {
   .wrapper {
     max-width: 700px;
   }
@@ -28,5 +28,32 @@
 
   .testimonials__item {
     width: 100%;
+  }
+
+  // FOOTER 
+  #footer {
+    background: $baseColor;
+    padding: 1rem 0;
+  }
+  
+  .footer-content {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+  
+    p {
+      display: block;
+      font-size: 1rem;
+      color: $secondaryColor;
+    }
+  
+    a.btn {
+      display: flex;
+      align-items: center;  
+      border-radius: 4px;
+    }
   }
 }
