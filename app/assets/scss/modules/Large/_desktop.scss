@@ -3,10 +3,92 @@
     max-width: 980px;
   }
 
+  // MAIN HEADER
+  .main-header {
+
+    background-color: rgba(47,85,114, 0.30);
+    position: fixed;
+    width: 100%;
+    min-height: 55px; 
+    z-index: 300;
+  
+    font-weight: bold;
+  }
+  
+  .header-container {
+    min-height: 55px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  
+    img#logo {
+      height: 100px;
+      width: 185px;
+  
+      position: absolute;
+      padding: 1rem;
+      margin-top: -28px;
+      background: $highlightColor;
+  
+    }
+  
+  
+    nav {
+      display: flex;
+    }
+  
+    nav ul li:last-child {
+      background: $highlightColor;
+    }
+  
+    nav ul{
+      min-height: 55px; 
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  
+      li {
+        min-height: 55px; 
+        background: $baseColor;
+        padding: 1rem;
+        height: 100%;
+        transition: 0.5s ease;
+  
+        a {
+          color: $secondaryColor;
+          transition: 0.5s ease;
+        }
+      }
+  
+      li:hover {
+        background: none;
+      }
+  
+      a#intouch {
+        padding: 1rem;
+        min-height: 55px;
+        background: $highlightColor;
+        color: $secondaryColor;
+        transition: 0.5s ease;
+      }
+  
+      a#intouch:hover {
+        color: $highlightColor;
+        background: $secondaryColor
+      }
+      
+      
+    }
+  }
+  
+  
+
+
   // MAIN HERO
   .large-hero {
     &__main-image {
-    height: 560px;
+    height: 675px;
     }
 
     &__heading {
