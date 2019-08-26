@@ -7,28 +7,32 @@
   <title>Clear View Escapes</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Your clarify. One trip away. We create soul restoring journeys that inspire you to be you.">
+  <script src="https://kit.fontawesome.com/8418a56738.js"></script>
+
   <link rel="stylesheet" href="./assets/styles/styles.css">
 </head>
 <body>
   <header class="main-header">
     <div class="wrapper">
     <div class="header-container">
-      <a href="index.html"><h1 class="mobile-view">Logo</h1><img id="logo" class="desktop-view" src="assets/images/icons/clear-view-escapes.svg"></a>
+      <a href="index.html"><h1 class="mobile-view">Clear View Escapes</h1><img id="logo" class="desktop-view" src="assets/images/icons/clear-view-escapes.svg"></a>
       
       <nav>
           <ul class="desktop-view">
             <li><a href="#our-beginning">Our Beginning</a></li>
             <li><a href="#features">Features</a></li>
             <li><a href="#testimonials">Testimonials</a></li>
+            <button onClick="openNav()" class="mobile-view mobile-menu__button"><i class="fas fa-bars menu-button-icon"></i></button>
             <a id="intouch" class="btn base-color" href="#">Get in Touch</a>
           </ul>
-          <ul id="moible-menu" class="mobile-view">
-            <li><a href="#our-beginning">Our Beginning</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <a class="btn base-color" href="#">Get in Touch</a>
+
+          <ul id="mySidenav" class="mobile-view moible-menu">
+            <li><a onClick="closeNav()" href="#our-beginning">Our Beginning</a></li>
+            <li><a onClick="closeNav()" href="#features">Features</a></li>
+            <li><a onClick="closeNav()" href="#testimonials">Testimonials</a></li>
+            <li><a onClick="closeNav()" href="#">Get in Touch</a></li>
           </ul>
-          <button class="mobile-view">Show Menu</button>
+          <a onClick="openNav()"><i class="fas fa-bars menu-button-icon"></i></a>
         </nav>
     </div>
   </div>
@@ -179,5 +183,15 @@
     </div>
   </footer>
   <script src="./assets/js/index.js"></script>
+
+  <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.left = "0";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.left = "-100vh";
+    }
+    </script>
 </body>
 </html>

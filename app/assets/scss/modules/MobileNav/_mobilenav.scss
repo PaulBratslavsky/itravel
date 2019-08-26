@@ -1,0 +1,65 @@
+.mobile-view {
+  display: block;
+}
+
+h1.mobile-view {
+  font-size: 1.6rem;
+  color: $baseColor;
+}
+
+.desktop-view {
+  display: none;
+}
+
+.moible-menu {
+  position: absolute;
+  top: 55px;
+  left: -100vh;
+
+  width: 100%;
+  height: calc( 100vh - 55px );
+
+  background:rgba($baseColor, 0.95);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  transition: 0.75s ease-in-out;
+
+  li {
+    margin-bottom: 1rem;
+  }
+  
+  li a {
+    color: #fefefe;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+  }
+
+  li a:hover {
+    color: $highlightColor;
+  }
+
+  &__button {
+    background: none;
+    border: none;
+  }
+
+}
+
+i.menu-button-icon {
+  font-size: 2rem;
+  color: $baseColor;
+}
+
+i.menu-button-icon:hover,
+i.menu-button-icon:focus {
+  color: $highlightColor;
+}
+
+i.menu-button-icon:hover .moible-menu {
+  transform: translateX(0);
+}
